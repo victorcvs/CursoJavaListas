@@ -12,8 +12,7 @@ public class Program {
 		
 		listInt.add(2);
 		
-		List<String> list = new ArrayList<String>();
-		
+		List<String> list = new ArrayList<String>(); // inclui lista tipo String
 		
 		list.add("Maria");
 		list.add("Joao");
@@ -22,7 +21,7 @@ public class Program {
 		list.add(2, "Pedro"); // adcionou na posição 2
 		
 		
-		System.out.println(list.size());
+		System.out.println(list.size());  // recupera tamanho da lista
 		
 		for(String nome : list) {
 			System.out.println(nome);
@@ -30,9 +29,11 @@ public class Program {
 		
 		System.out.println("--------------");
 		
-		list.removeIf(x -> x.charAt(0) == 'M');
+		list.removeIf(x -> x.charAt(0) == 'M');  // remove da lista qualquer registro iniciado com "M"
 		
-		
+		for(String nome : list) {
+			System.out.println(nome);
+		}
 	}
 
 }
